@@ -1,0 +1,11 @@
+{
+  "name": "plusTest",
+  "description": "Testing Version!",
+  "version": "0.0.1",
+  "dependencies": {
+    "mime": "1.2.11",
+    "async":"0.9.0",
+    "colors": "1.0.3",
+    "ejs":"1.0.0"
+  }
+}
