@@ -1,10 +1,9 @@
 {
-  "name": "plustest",
+  "name": "plus",
   "description": "Testing Version!",
-  "version": "3.0.0",
-  "dependencies": {
-    "mime": "1.2.11",
-    "colors": "1.0.3",
-    "ejs":"1.0.0",
-  }
+  "version": "0.0.1",
+  "preferGlobal": "true",
+  "bin": {
+        "plus": "./bin/plus"
+    }
 }

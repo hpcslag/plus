@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var UserPath = process.cwd(),
+	cli_argv = process.argv.slice(2);
+
+if(cli_argv == "start"){
+	require('../lib/server');
+}
