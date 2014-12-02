@@ -1,8 +1,24 @@
 #!/usr/bin/env node
 
-var UserPath = process.cwd(),
-	cli_argv = process.argv.slice(2);
+var path = require('path'),
+	UserPath = process.cwd(),
+	cli_argv = process.argv.slice(2), //args.shift()
+	project_name = "";
 
-if(cli_argv == "start"){
-	require('../lib/server');
+switch(cli_argv[0]){
+	case 'start':
+		require('../lib/server');
+		break;
+	case 'create':
+		var project_name = process.argv.slice(2)[1] || 'project';
+		init_project(project_name);
+		break;
+}
+/**
+*	Create Projcet Directory
+*
+*	Parameters: Project Name or Default.
+*/
+function init_project(project_name){
+	require('../lib/util').create_project(path.join(__dirname,'../assets/project'),path.join(process.cwd(),project_name));
 }
