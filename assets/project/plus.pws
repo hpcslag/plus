@@ -1,0 +1,4 @@
+##this is plus server configure file!
+{
+	type.project - default //write to global config to start
+}
